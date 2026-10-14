@@ -1,0 +1,145 @@
+/* 1. Reset y Base - Aseguramos que el scroll sea fluido */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #e7ece7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* Quitamos el align-items: center para evitar el bloqueo del scroll */
+    align-items: flex-start; 
+    padding: 40px 15px; /* Espacio para que respire en el celular */
+    box-sizing: border-box;
+    overflow-y: auto; /* Forzamos que el scroll vertical esté disponible */
+}
+
+/* 2. Contenedor - El "margin: auto" hace la magia del centrado seguro */
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    margin: auto; /* Centra horizontal y verticalmente sin romper el scroll */
+    box-sizing: border-box;
+}
+
+/* 3. Títulos y Separadores */
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #333; 
+    border-radius: 10px;
+    margin: 0 auto 25px;
+}
+
+/* 4. Elementos del Formulario */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #777;
+    background: transparent;
+    padding: 10px 2px;
+    font-size: 16px; /* 16px evita que el iPhone haga zoom automático al clickear */
+    color: #333;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-bottom: 2px solid #5c1b1b;
+}
+
+/* 5. Filas y Layouts Flexibles */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap; /* Clave para que no se amontone en móvil */
+}
+
+.row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: fit-content;
+}
+
+.talles {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.discapacidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.discapacidad input[type="text"] {
+    flex: 1;
+    min-width: 140px;
+}
+
+/* 6. Botón */
+button {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 30px;
+    background: #2A825F;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background: #007;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 7. Ajustes finales para pantallas muy pequeñas */
+@media (max-width: 380px) {
+    body {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}

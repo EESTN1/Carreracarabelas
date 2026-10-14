@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<title>Pagos</title>
+<link rel="stylesheet" href="p1.css">
+<link rel="icon" type="image/png" href="imgpago/juan.png">
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>PAGOS</h1>
+<p class="sub"><b>Transferir el monto segun la distancia a correr</b></p>
+
+<form>
+
+<label class="option">
+<span class="distance">Carrera 10KM</span>
+<span class="price">$35.000</span>
+</label>
+
+<label class="option">
+<span class="distance">Correcaminata 4KM</span>
+<span class="price">$20.000</span>
+</label>
+
+
+<p class="alias">Alias:
+        <b style="cursor:pointer; color:rgb(86, 14, 32);" onclick="copiarAlPortapapeles('cuero.ropa.gruta', this)">
+        cooperadoraescuela2
+        </b>
+    </p>
+    
+    <p  class="alias">envía el comprobante a <a href="https://wa.me/2474682969">2474682969</a></p>
+        <a href="imgpago/DESLINDE_DESAFIO_CARABELAS.pdf" download class="btn-pdf">
+  Descargar DESLINDE 
+</a>
+        </br>
+        <p class="cartel"><b> ⚠️ Para participar en la carrera es necesario presentarse con el
+  <strong>deslinde de responsabilidad completo</strong>
+  (se puede descargar en el botón verde debajo del número de telefono)
+  y un <strong>certificado médico 2026 firmado por un profesional</strong>.</b>
+    <script>
+        function copiarAlPortapapeles(texto, elemento) {
+    navigator.clipboard.writeText(texto).then(() => {
+        // Guardamos el texto original para restaurarlo después
+        const textoOriginal = elemento.innerText;
+        
+        // Cambio visual temporal para feedback
+        elemento.innerText = "¡Copiado!";
+        elemento.style.color = "green";
+
+        setTimeout(() => {
+            elemento.innerText = textoOriginal;
+            elemento.style.color = "blue";
+        }, 1000);
+    }).catch(err => {
+        console.error('Error al copiar: ', err);
+    });
+}
+    </script>
+
+
+</form>
+
+</div>
+
+</body>
+</html>

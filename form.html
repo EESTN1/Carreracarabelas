@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscripción</title>
+<link rel="icon" type="image/png" href="img/juan.png">
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h1>INSCRIPCIÓN</h1>
+
+<form id="form">
+
+
+<div class="form-group">
+<input id="DNI" type="text" placeholder="D.N.I." required inputmode="numeric" pattern="[0-9]{7,8}" title="Ingresá 7 u 8 números, sin puntos">
+</div>
+
+<div class="form-group">
+<input id="Apellido" type="text" placeholder="Apellido" required>
+</div>
+
+<div class="form-group">
+<input id="Nombre" type="text" placeholder="Nombre" required>
+</div>
+
+<div class="form-group">
+<input id="email" type="email" placeholder="Email" required>
+</div>
+
+<div class="form-group">
+<input id="Telefono" type="tel" placeholder="Telefono" required>
+</div>
+
+<div class="form-group">
+<input id="localidad" type="text" placeholder="Localidad" required>
+</div>
+
+<div class="form-group">
+    <select id="Provincia" required>
+        <option value="" disabled selected>Provincia</option>
+        <option value="Buenos Aires">Buenos Aires</option>
+        <option value="CABA">CABA</option>
+        <option value="Catamarca">Catamarca</option>
+        <option value="Chaco">Chaco</option>
+        <option value="Chubut">Chubut</option>
+        <option value="Córdoba">Córdoba</option>
+        <option value="Corrientes">Corrientes</option>
+        <option value="Entre Ríos">Entre Ríos</option>
+        <option value="Formosa">Formosa</option>
+        <option value="Jujuy">Jujuy</option>
+        <option value="La Pampa">La Pampa</option>
+        <option value="La Rioja">La Rioja</option>
+        <option value="Mendoza">Mendoza</option>
+        <option value="Misiones">Misiones</option>
+        <option value="Neuquén">Neuquén</option>
+        <option value="Río Negro">Río Negro</option>
+        <option value="Salta">Salta</option>
+        <option value="San Juan">San Juan</option>
+        <option value="San Luis">San Luis</option>
+        <option value="Santa Cruz">Santa Cruz</option>
+        <option value="Santa Fe">Santa Fe</option>
+        <option value="Santiago del Estero">Santiago del Estero</option>
+        <option value="Tierra del Fuego">Tierra del Fuego</option>
+        <option value="Tucumán">Tucumán</option>
+    </select>
+</div>
+
+<div class="form-group">
+<input id="fecha-nacimiento" type="date" required>
+</div>
+
+<div class="row">
+<span>Talle:</span>
+<label><input id="XS" type="radio" name="talle" value="XS" required> XS</label>
+<label><input id="S" type="radio" name="talle" value="S" required> S</label>
+<label><input id="M" type="radio" name="talle" value="M" required> M</label>
+<label><input id="L" type="radio" name="talle" value="L" required> L</label>
+<label><input id="XL" type="radio" name="talle" value="XL" required> XL</label>
+<label><input id="XXL" type="radio" name="talle" value="XXL" required> XXL</label>
+<label><input id="XXXL" type="radio" name="talle" value="XXXL" required> XXXL</label>
+</div>
+
+<div class="row">
+<span>Distancia:</span>
+<div class="talles">
+<label><input id="5km" type="radio" name="Distancia" value="5KM" required> 5KM</label>
+<label><input id="10km" type="radio" name="Distancia" value="10KM" required> 10KM</label>
+</div>
+</div>
+
+<button type="submit">Enviar</button>
+<!-- <button type="button"> <a href="/pago/p1.html">Ir a pagar</a></button> -->
+
+<script type="module" src="form.js"></script>
+
+
+
+
+
+
+<!-- 
+
+<div class="form-group">
+<input id="DNI" type="text" placeholder="D.N.I.">
+</div>
+
+<div class="form-group">
+<input id="Apellido" type="text" placeholder="Apellido">
+</div>
+
+<div class="form-group">
+<input id="Nombre" type="text" placeholder="Nombre">
+</div>
+
+<div class="form-group">
+<input id="email" type="email" placeholder="Email">
+</div>
+
+<div class="form-group">
+<input id="Telefono" type="text" placeholder="Telefono">
+</div>
+
+<div class="form-group">
+<input id="localidad" type="text" placeholder="Localidad">
+</div>
+
+<div class="form-group">
+    <select id="Provincia" required>
+                <option value="" disabled selected>Provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="CABA">CABA</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+</div>
+
+<div class="form-group">
+<input id="fecha-nacimiento" type="date">
+</div>
+
+<div class="row">
+<span>Talle:</span>
+
+<label>
+<input id="XS" type="radio" name="talle">
+XS
+</label>
+
+<label>
+<input id="S" type="radio" name="talle">
+S
+</label>
+
+<label>
+<input id="M" type="radio" name="talle">
+M
+</label>
+
+<label>
+<input id="L" type="radio" name="talle">
+L
+</label>
+
+<label>
+<input id="XL" type="radio" name="talle">
+XL
+</label>
+
+<label>
+<input id="XXL" type="radio" name="talle">
+XXL
+</label>
+
+<label>
+<input id="XXXL" type="radio" name="talle">
+XXXL
+</label>
+
+</div>
+
+<div class="row">
+<span>Distancia:</span>
+
+<div class="talles">
+
+<label>
+<input id="5km" type="radio" name="Distancia">
+4KM
+</label>
+
+<label>
+<input id="10km" type="radio" name="Distancia">
+8KM
+</label>
+
+</div>
+</div> -->

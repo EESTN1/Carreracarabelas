@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="img/juan">
+<title>Lista corredores</title>
+<link rel="stylesheet" href="lista.css">
+</head>
+
+<body>
+
+<script>
+const password = prompt("ingresa la contraseña:   ");
+
+if (password !== "1") {
+    alert ("contraseña incorrecta");
+
+    window.location.href = "/";}
+</script>
+
+<h2>Buscar corredor</h2>
+<input type="text" id="buscador" placeholder="Buscar por nombre...">
+<p id="errorFirebase" role="alert" hidden></p>
+<ul id="listaCorredores"></ul>
+
+<h2>Corredores 5KM</h2>
+<ul id="lista5km"></ul>
+
+<h2>Corredores 10KM</h2>
+<ul id="lista10km"></ul>
+
+<script type="module" src="lista.js"></script>
+
+</body>
+</html>

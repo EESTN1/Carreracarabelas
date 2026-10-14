@@ -1,0 +1,390 @@
+.footer{
+    background: #007;
+    color:white;
+    padding:60px 80px 20px 80px;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.footer-left h1{
+    font-size:40px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.circle{
+    border:4px solid white;
+    border-radius:50%;
+    padding:5px 12px;
+}
+
+.footer-left p{
+    margin-top:5px;
+    font-size:12px;
+}
+
+.footer-center{
+    text-align:center;
+    max-width:300px;
+}
+
+.desde{
+    margin-top:15px;
+}
+
+.social{
+    margin-top:15px;
+}
+
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+.social i{
+    margin:0 8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.footer-right{
+    max-width:350px;
+    line-height:1.6;
+}
+
+.compromiso{
+    margin-top:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+
+
+.linea{
+    width:40px;
+    height:3px;
+    background:white;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    border-top:1px solid rgba(255,255,255,0.4);
+    padding-top:10px;
+    font-size:12px;
+    color:#ddd;
+}
+
+.footer h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.footer h2::before, .footer h2::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: #ffffff;
+}
+
+/* ===================== MEDIA QUERIES RESPONSIVE ===================== */
+
+/* TABLET (768px - 1024px) */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 40px 50px 20px 50px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-left h1 {
+        font-size: 32px;
+    }
+
+    .footer-left p {
+        font-size: 11px;
+    }
+
+    .footer-center {
+        max-width: 100%;
+    }
+
+    .footer-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .compromiso {
+        justify-content: center;
+    }
+
+    .footer h2 {
+        font-size: 24px;
+    }
+
+    .footer h2::before, .footer h2::after {
+        flex: 1;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+        height: 80px;
+    }
+
+    .wrapper .icon {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+/* MOBILE (< 768px) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 20px 15px 20px;
+        margin-top: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-left h1 {
+        font-size: 28px;
+    }
+
+    .footer-left p {
+        font-size: 10px;
+    }
+
+    .footer-center {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .desde {
+        font-size: 12px;
+    }
+
+    .footer-right {
+        max-width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .wrapper {
+        padding-top: 15px;
+        height: 70px;
+    }
+
+    .wrapper .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        margin: 8px;
+    }
+
+    .compromiso {
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .linea {
+        width: 30px;
+        height: 2px;
+    }
+
+    .footer h2 {
+        font-size: 18px;
+    }
+
+    .footer h2::before, .footer h2::after {
+        flex: 1;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+        padding-top: 8px;
+        font-size: 10px;
+    }
+}
+
+/* MOBILE PEQUEÑO (< 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px 12px 15px;
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-left h1 {
+        font-size: 22px;
+    }
+
+    .footer-left p {
+        font-size: 9px;
+    }
+
+    .footer-center {
+        max-width: 100%;
+    }
+
+    .desde {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .social {
+        margin-top: 10px;
+    }
+
+    .footer-right {
+        max-width: 100%;
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .wrapper {
+        padding-top: 10px;
+        height: 60px;
+    }
+
+    .wrapper .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+        margin: 6px;
+    }
+
+    .wrapper .tooltip {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .compromiso {
+        margin-top: 12px;
+        gap: 8px;
+    }
+
+    .linea {
+        width: 25px;
+        height: 2px;
+    }
+
+    .footer h2 {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .footer h2::before, .footer h2::after {
+        flex: 1;
+    }
+
+    .footer-bottom {
+        margin-top: 15px;
+        padding-top: 8px;
+        font-size: 9px;
+    }
+
+    .social i {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
